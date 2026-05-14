@@ -75,7 +75,7 @@ I build **production-grade full-stack web applications**, **DevOps infrastructur
 | **3D / Animation** | Three.js, React Three Fiber, Drei, Framer Motion |
 | **Build** | Vite, PostCSS |
 | **Email** | EmailJS |
-| **Deployment** | Netlify / Vercel |
+| **Deployment** | GitHub Pages |
 
 ---
 
@@ -172,16 +172,13 @@ And update the **hero** name/bio in `src/components/hero.tsx`.
 
 ## 📦 Deploy
 
-### Netlify (recommended — free)
-```bash
-npm run build
-# drag & drop the /dist folder to netlify.com/drop
-```
+### GitHub Pages (avtomatik)
 
-### Vercel
+Har safar `main` ga push qilinganda `.github/workflows/deploy.yml` orqali avtomatik deploy bo'ladi.
+
 ```bash
-npm install -g vercel
-vercel --prod
+git push origin main
+# → https://builtbysardor.github.io/Portfolio/
 ```
 
 ---
