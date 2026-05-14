@@ -6,7 +6,6 @@ import CanvasLoader from "../loader";
 
 // Earth
 const Earth = () => {
-  // import earth scene
   const earth = useGLTF("./planet/scene.gltf");
 
   return (
@@ -23,7 +22,11 @@ const EarthCanvas = () => {
       gl={{ preserveDrawingBuffer: true }}
       camera={{ fov: 45, near: 0.1, far: 200, position: [-4, 3, 6] }}
     >
-      {/* Suspense show Canvas Loader on fallback */}
+      {/* Lights — globus ko'rinishi uchun */}
+      <ambientLight intensity={1.5} />
+      <directionalLight position={[5, 5, 5]} intensity={1.2} />
+      <pointLight position={[-10, -10, -10]} intensity={0.5} />
+
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           autoRotate
@@ -31,8 +34,6 @@ const EarthCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-
-        {/* Earth */}
         <Earth />
       </Suspense>
     </Canvas>
