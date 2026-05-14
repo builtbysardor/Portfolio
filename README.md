@@ -8,7 +8,7 @@
 
 ![Portfolio Preview](.github/images/img_main.jpg)
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-915eff?style=for-the-badge)](https://github.com/builtbysardor/Portfolio)
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-915eff?style=for-the-badge)](https://builtbysardor.github.io/Portfolio/)
 [![GitHub](https://img.shields.io/badge/GitHub-builtbysardor-181717?style=for-the-badge&logo=github)](https://github.com/builtbysardor)
 [![Made with React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org)
 [![Three.js](https://img.shields.io/badge/Three.js-3D-black?style=for-the-badge&logo=three.js)](https://threejs.org)
