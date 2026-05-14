@@ -82,6 +82,7 @@ Here is the folder structure of this app.
   |- bun.lock
   |- index.html
   |- netlify.toml
+  |- package-lock.json
   |- package.json
   |- postcss.config.cjs
   |- tailwind.config.ts
