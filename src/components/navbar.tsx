@@ -51,7 +51,7 @@ export const Navbar = ({ hide }: NavbarProps) => {
         >
           <img src={logo} alt="Logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Shubham&nbsp;<span className="sm:block hidden">| Developer</span>
+            Sardor&nbsp;<span className="sm:block hidden">| Full-Stack & Cyber</span>
           </p>
         </Link>
 
