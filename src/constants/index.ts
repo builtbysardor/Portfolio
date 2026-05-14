@@ -68,7 +68,7 @@ export const EXPERIENCES = [
     company_name: "Freelance",
     icon: web,
     iconBg: "#1a1a2e",
-    date: "Jan 2023 - Present",
+    date: "Jan 2023 - 2026",
     points: [
       "Building production-grade web applications using Next.js, FastAPI and TypeScript.",
       "Designing RESTful APIs and real-time systems with WebSockets.",
@@ -81,7 +81,7 @@ export const EXPERIENCES = [
     company_name: "Self-directed",
     icon: mobile,
     iconBg: "#16213e",
-    date: "Jun 2023 - Present",
+    date: "Jun 2023 - 2026",
     points: [
       "Built InfraWatch — a full Prometheus + Grafana + Docker monitoring stack.",
       "Automated CI/CD pipelines and container orchestration workflows.",
@@ -94,7 +94,7 @@ export const EXPERIENCES = [
     company_name: "Independent",
     icon: backend,
     iconBg: "#0f3460",
-    date: "Sep 2023 - Present",
+    date: "Sep 2023 - 2026",
     points: [
       "Developed SentinelLog — real-time SOC dashboard detecting SSH brute-force, SQLi, DDoS attacks.",
       "Built PhishGuard AI — 100% local ML-based phishing email detector with Naive Bayes + FastAPI.",
@@ -107,7 +107,7 @@ export const EXPERIENCES = [
     company_name: "GitHub · builtbysardor",
     icon: creator,
     iconBg: "#1a1a2e",
-    date: "2023 - Present",
+    date: "2023 - 2026",
     points: [
       "Maintaining 20+ open-source repositories on GitHub.",
       "Building developer tools, security utilities and full-stack templates.",
