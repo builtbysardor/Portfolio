@@ -8,7 +8,6 @@ type ComputersProps = {
   isMobile: boolean;
 };
 
-// Computers
 const Computers = ({ isMobile }: ComputersProps) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
@@ -34,27 +33,23 @@ const Computers = ({ isMobile }: ComputersProps) => {
   );
 };
 
-// Computer Canvas
+// Model ni oldindan yuklash
+useGLTF.preload("./desktop_pc/scene.gltf");
+
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 500px)");
     setIsMobile(mediaQuery.matches);
-
-    const handleMediaQueryChange = (event: MediaQueryListEvent) => {
-      setIsMobile(event?.matches);
-    };
-
+    const handleMediaQueryChange = (e: MediaQueryListEvent) => setIsMobile(e.matches);
     mediaQuery.addEventListener("change", handleMediaQueryChange);
-    return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    };
+    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
   }, []);
 
   return (
     <Canvas
-      frameloop="demand"
+      frameloop="always"
       shadows
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true, alpha: true }}
@@ -67,7 +62,6 @@ const ComputersCanvas = () => {
         />
         <Computers isMobile={isMobile} />
       </Suspense>
-      {/* Preload all olib tashlandi — sahifa sekin yuklanishiga sabab bo'lardi */}
     </Canvas>
   );
 };
