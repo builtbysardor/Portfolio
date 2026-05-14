@@ -4,11 +4,9 @@
 
 # 🚀 Sardor — 3D Portfolio
 
-### Full-Stack · DevOps · Cybersecurity
+### Full-Stack · DevOps · Cybersecurity · Samarkand, Uzbekistan 🇺🇿
 
-![Portfolio Preview](.github/images/img_main.jpg)
-
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-915eff?style=for-the-badge)](https://builtbysardor.github.io/Portfolio/)
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-915EFF?style=for-the-badge)](https://builtbysardor.github.io/Portfolio/)
 [![GitHub](https://img.shields.io/badge/GitHub-builtbysardor-181717?style=for-the-badge&logo=github)](https://github.com/builtbysardor)
 [![Made with React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org)
 [![Three.js](https://img.shields.io/badge/Three.js-3D-black?style=for-the-badge&logo=three.js)](https://threejs.org)
@@ -19,36 +17,35 @@
 
 ---
 
-## 👋 About
+## 🎬 Demo Video
 
-Hi, I'm **Sardor** — an 18-year-old self-taught developer from **Samarkand, Uzbekistan 🇺🇿**.
+> **Watch the full portfolio walkthrough:**
 
-I build **production-grade full-stack web applications**, **DevOps infrastructure tooling**, and **real-time cybersecurity systems**. This is my personal 3D portfolio built with React, Three.js and TypeScript — featuring an interactive 3D computer model, animated sections, and a contact form.
+[![Portfolio Demo Video](https://img.shields.io/badge/▶_Watch_Demo-Live_Site-FF0000?style=for-the-badge&logo=googlechrome)](https://portfolio-mocha-seven-22.vercel.app)
+
+> 📹 *To add a screen recording: upload a GIF to `.github/images/demo.gif` and replace the badge above with:*
+> `![Demo](https://raw.githubusercontent.com/builtbysardor/Portfolio/main/.github/images/demo.gif)`
 
 ---
 
 ## 📸 Screenshots
 
-### 🏠 Hero — 3D Computer Model
+### 🏠 Hero — Interactive 3D Computer Model
 ![Hero Section](.github/images/img_main.jpg)
 
-### 🧑‍💻 About & Services
-![About Section](.github/images/img_about.jpg)
-
-### 🗂️ Projects
-![Projects Section](.github/images/img_projects.jpg)
+> 💡 *Add more screenshots: upload images to `.github/images/` folder and embed them here.*
 
 ---
 
 ## ✨ Features
 
-- 🖥️ **Interactive 3D computer model** powered by Three.js & React Three Fiber
-- 🌌 **Animated starfield background** with particle effects
+- 🖥️ **Interactive 3D computer model** — powered by Three.js & React Three Fiber
+- 🌌 **Animated starfield background** — particle effects that respond to scroll
 - 📜 **Vertical timeline** — work experience with smooth scroll animations
 - 🎯 **Tilt effect cards** — projects & services with hover 3D tilt
-- ⌨️ **Framer Motion** animations throughout every section
-- 📡 **EmailJS** contact form — sends emails directly from the browser
-- 🌐 **3D Earth model** on the contact section
+- ⌨️ **Framer Motion animations** — throughout every section
+- 📡 **EmailJS contact form** — sends emails directly from the browser
+- 🌐 **3D Earth model** — on the contact section
 - ⚡ **Vite** — blazing fast build & HMR
 - 📱 **Fully responsive** — mobile, tablet, desktop
 
@@ -63,7 +60,7 @@ I build **production-grade full-stack web applications**, **DevOps infrastructur
 | 3 | **InfraWatch** | Prometheus · Grafana · Docker | One-command full observability monitoring stack |
 | 4 | **PhishGuard AI** | Python · FastAPI · Naive Bayes ML | 100% local phishing email detector |
 | 5 | **Antivirus Pro** | Python · VirusTotal API · Radar | Enterprise cybersecurity dashboard |
-| 6 | **KriptoVault** | Python · FastAPI · Crypto | Secure offline cipher & encryption vault |
+| 6 | **CryptaVault** | Vanilla JS · Canvas API | Interactive Caesar & Vigenère cipher tool |
 
 ---
 
@@ -84,44 +81,25 @@ I build **production-grade full-stack web applications**, **DevOps infrastructur
 ```
 Portfolio/
 ├── public/
-│   └── desktop_pc/          # 3D computer GLTF model
+│   └── desktop_pc/
 ├── src/
-│   ├── assets/              # Images, icons, tech logos
+│   ├── assets/
 │   ├── components/
-│   │   ├── canvas/          # Three.js 3D components
-│   │   │   ├── computers.tsx   # 3D desktop computer
-│   │   │   ├── earth.tsx       # 3D earth (contact section)
-│   │   │   ├── stars.tsx       # Animated starfield
-│   │   │   └── ball.tsx        # 3D tech icon balls
+│   │   ├── canvas/
 │   │   ├── hero.tsx
 │   │   ├── about.tsx
-│   │   ├── experience.tsx
-│   │   ├── tech.tsx
 │   │   ├── works.tsx
-│   │   ├── contact.tsx
-│   │   └── navbar.tsx
+│   │   └── contact.tsx
 │   ├── constants/
-│   │   └── index.ts         # ← All portfolio data lives here
-│   ├── hoc/
-│   │   └── section-wrapper.tsx
-│   ├── utils/
-│   │   └── motion.ts
-│   ├── styles.ts
+│   │   └── index.ts
 │   └── app.tsx
 ├── index.html
-├── tailwind.config.ts
 └── vite.config.ts
 ```
 
 ---
 
 ## 🚀 Getting Started
-
-### Prerequisites
-- Node.js 18+
-- npm or bun
-
-### Installation
 
 ```bash
 # Clone the repo
@@ -136,29 +114,6 @@ npm run dev
 # → http://localhost:5173
 ```
 
-### Build for production
-
-```bash
-npm run build
-npm run preview
-```
-
----
-
-## ⚙️ Customization
-
-All portfolio content is in one file — **`src/constants/index.ts`**:
-
-```ts
-// Change your info here:
-export const SERVICES = [ ... ]     // Service cards
-export const EXPERIENCES = [ ... ]  // Work timeline
-export const PROJECTS = [ ... ]     // Project cards
-export const SOCIALS = [ ... ]      // Social links
-```
-
-And update the **hero** name/bio in `src/components/hero.tsx`.
-
 ---
 
 ## 📬 EmailJS Setup
@@ -172,9 +127,7 @@ And update the **hero** name/bio in `src/components/hero.tsx`.
 
 ## 📦 Deploy
 
-### GitHub Pages (avtomatik)
-
-Har safar `main` ga push qilinganda `.github/workflows/deploy.yml` orqali avtomatik deploy bo'ladi.
+Every push to `main` auto-deploys via `.github/workflows/deploy.yml`:
 
 ```bash
 git push origin main
@@ -187,17 +140,11 @@ git push origin main
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-builtbysardor-181717?style=flat-square&logo=github)](https://github.com/builtbysardor)
-[![Email](https://img.shields.io/badge/Email-aturdiyev787@gmail.com-EA4335?style=flat-square&logo=gmail)](mailto:aturdiyev787@gmail.com)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Visit-915EFF?style=for-the-badge)](https://portfolio-mocha-seven-22.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-builtbysardor-181717?style=for-the-badge&logo=github)](https://github.com/builtbysardor)
 
-</div>
+**Built with ❤️ by Sardor · Samarkand, Uzbekistan 🇺🇿**
 
----
-
-<div align="center">
-
-Built with ❤️ by **Sardor** · Samarkand, Uzbekistan 🇺🇿
-
-⭐ Star this repo if you like it!
+⭐ *Star this repo if you liked it!*
 
 </div>
